@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="uniqpy",
-    version="0.1.2",
+    version="0.1.3",
     author="D.N. Konanov",
     author_email="konanovdmitriy@gmail.com",
     description="UNIQUAC-based tool for multicomponent VLEs",
@@ -22,6 +22,7 @@ setuptools.setup(
     packages=['uniqpy'],
     install_requires=[
         'numpy',
+        'scipy'
     ],
     entry_points={
         'console_scripts': [
