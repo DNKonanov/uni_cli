@@ -25,6 +25,6 @@ Vapor-to-liquid transformation can be performed with this command:
 
 
 
-### Rereferences
+### References
 
 will be added
