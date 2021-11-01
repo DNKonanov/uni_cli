@@ -14,7 +14,7 @@ Suppose that `x.txt` contains the matrix where each column means the substance, 
 
 `uniqpy fit -l x.txt -v y.txt -q Q.txt -r R.txt -p parameters.txt`
 
-`-p` parameter sets the output file name. It should be noted that the binary interatction energies matrix written in this file is a symmethric matrix and is stored in linearized form. It can be reshaped into square form using the `squareform` function from `scipy.spatial.distance`.
+`-p` parameter sets the output file name. It should be noted that the binary interaction energies matrix being symmetric is stored in linearized form. It can be reshaped into square form using the `squareform` function from `scipy.spatial.distance`.
 
 `Q.txt` and `R.txt` are input text files which contain molecular surface areas and volumes. The order of chemical in these files must be the same as the order of corresponding columns in `x.txt` and `y.txt` files. Q and R values can be found in different ways, for instance using the MSMS algorithm implemented as a [PyMOL plugin](http://pldserver1.biochem.queensu.ca/~rlc/work/pymol/msms_pymol.py). Examples of x, y, Q and R are availabe in the `test` folder in this repository.
 
@@ -25,7 +25,7 @@ Vapor-to-liquid transformation can be performed with this command:
 
 `uniqpy transform -v y.txt -q Q.txt -r R.txt -p parameters.txt`
 
-Here, `parameteres.txt` is an input file obtained with the fitting stage.
+Here, `parameteres.txt` is an input file obtained on the fitting stage.
 
 
 
